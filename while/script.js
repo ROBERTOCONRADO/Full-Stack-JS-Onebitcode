@@ -11,6 +11,7 @@ if (decisaoPiloto == true) {
 }
 while(decisaoPiloto == '1') {
     dobras += 1
+    
     decisaoPiloto = confirm('Deseja entrar em mais uma dobra espacial?')
 }
 
