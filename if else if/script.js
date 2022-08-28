@@ -22,7 +22,7 @@ function interacao() {
                 alert('Velocidade perigosa. Controle automático forçado.');
             }
         } else {
-            alert(`Nave desligada! Aguardando ordem com Cap. ${piloto}`);
+            alert(`Nave desligada! Aguardando ordem do Cap. ${piloto}`);
         } 
     }     
 }
