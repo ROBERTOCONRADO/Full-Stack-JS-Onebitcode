@@ -18,6 +18,3 @@ function interagir() {
 
     alert(`Nave ${naveNome} realizou ${dobras} dobras`)
 }
-
-
-
