@@ -1,6 +1,6 @@
 let naveNome = prompt('Digite o nome da nave!');
-let naveVelocidade = 0;
-let chosenOptions 
+let naveVelocidade = 0
+let chosenOption
 
 function menu() {
     let option
@@ -32,8 +32,8 @@ function imprimirDados(nome, velocidade) {
 }
 
 do {
-    chosenOptions = menu()
-    switch(chosenOptions) {
+    chosenOption = menu()
+    switch(chosenOption) {
         case '1':
             naveVelocidade = acelerar(naveVelocidade);
             break;
@@ -46,4 +46,26 @@ do {
         default:
             alert('Encerrando programa de bordo!')    
     }
-} while(chosenOptions != '4')
+} while(chosenOption != '4')
+
+
+
+/*Neste exercício vamos simular o computador de bordo de uma espaçonave no momento em que ela inicia a parada até abrir as comportas para os pilótos saírem*/
+function ativar() {
+   function slowDown (velocity, printer) {
+        let deceleration = 20
+
+        while(velocity > 0) {
+            printer(velocity)
+            velocity -= deceleration
+        }
+
+        alert('Nave parada. As comportas podem ser abertas.')
+    }
+
+    let spaceshipVelocity = 150
+
+    slowDown(spaceshipVelocity, function(velocity) {
+        console.log(`Velocidade atual: ${velocity}`)
+    }) 
+}
