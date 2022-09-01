@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="exercicio.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(85, 107, 47, 0.379);
+        }
+        li, input {
+            display: block ;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        button {
+            width: 177px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home Registration</h1>
+    <ul>
+        <li>
+            Número da Residência
+            <input type="text" name="numero">
+        </li>
+        <li>
+            Bairro
+            <input type="text" name="bairro">
+        </li>
+        <li>
+            Cidade
+            <input type="text" name="cidade">
+        </li>
+        <li>
+            Área da Casa
+            <input type="text" name="area">
+        </li>
+        <button onclick="add()">Adicionar</button>
+    </ul>
+
+    <ul id="lista"></ul>
+</body>
+</html>

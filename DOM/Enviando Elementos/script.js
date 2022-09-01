@@ -4,4 +4,5 @@ function primeiroNome(element) {
 
 function segundoNome() {
     console.log(event)
+    alert(`Óla ${event.target.value}`);
 }
