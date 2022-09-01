@@ -10,5 +10,14 @@ function add() {
     let removerBotao = document.createElement("button")
     removerBotao.type = "button"
     removerBotao.innerText = "Remover"
-    removerBotao.setAttribute("onclick", "removeHouse(this)");
+    removerBotao.setAttribute("onclick", "removeCasa(this)");
+
+    novaLista.appendChild(removerBotao)
+
+    document.getElementById("lista").appendChild(novaLista)
+}
+
+function removeCasa(button) {
+    let liRemove = button.parentNode
+    document.getElementById("lista").removeChild(liRemove)
 }
