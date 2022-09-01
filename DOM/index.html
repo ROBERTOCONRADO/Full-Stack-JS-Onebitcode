@@ -8,24 +8,31 @@
     <title>DOM</title>
 </head>
 <body style="background: rgba(221, 0, 0, 0.272);">
-    <h1>Selecionando Elementos no DOM</h1>
+    <h1>Selecionando Elementos [DOM] </h1>
     <button onclick="show()">Nome</button>
     <button onclick="chamar1()">Telefone 1</button>
     <button onclick="chamar2()">Telefone 2</button>
     <p>
         <label for="">Nome:</label>
-        <input type="text" id="name" name="fullname">
+        <input type="text" id="name" name="fullname" placeholder="Selecionando pelo ID">
     </p>
-
+    
     <div id="contatos">
         <p>
             <label for="">Telefone 1</label>
-            <input type="text" name="telefone" id="telefone1">
+            <input type="text" name="telefone" id="telefone1" placeholder="Selec. pelo name='telefone'"><!--[0]-->
         </p>
         <p>
             <label for="">Telefone 2</label>
-            <input type="text" name="telefone" id="telefone2">
+            <input type="text" name="telefone" id="telefone2" placeholder="Selec. pelo name='telefone'"><!--[1]-->
         </p>
     </div>
+    <hr>
+    Usando querySelectorAll para selecionar o telefone 1
+    <button onclick="chamar4()">Start</button>
+    <hr>
+    <p>Usando getElementsByTagName("input") para selecionar o telefone 2</p>
+    <p>Observe que na página temos 3 campos input iniciando do [0]Nome, [1]Telefone1, [2]Telefone2...</p>
+    <button onclick="chamar5()">Start</button>
 </body>
 </html>
