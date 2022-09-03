@@ -7,16 +7,47 @@
     <script src="script.js"></script>
     <title>Manipulando Estilos</title>
     <style>
-        p.brown-color {
+    
+        p.teste{
             color: brown;
+            font-size: 25px;
+        }
+        p.teste:hover {
+            animation: teste 2s ease;
+        }
+        @-webkit-keyframes teste {
+        0% {
+            letter-spacing: 1em;
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.6;
+        }
+        100% {
+            letter-spacing: normal;
+            opacity: 1;
+        }
+        }
+        @keyframes teste {
+        0% {
+            letter-spacing: 1em;
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.6;
+        }
+        100% {
+            letter-spacing: normal;
+            opacity: 1;
+        }
         }
     </style>
 </head>
 <body>
-    <button type="button" onclick="funcao1()">Fundo Azul</button>
-    <button type="button" onclick="funcao2()">Fundo Transparente</button>
-    <button type="button" onclick="funcao3()">Fonte Vermelha</button>
-    <button type="button" onclick="funcao4()">Fundo Normal</button>
+    <button type="button" onclick="funcao1()">Função1</button>
+    <button type="button" onclick="funcao2()">Função2</button>
+    <button type="button" onclick="funcao3()">Função3</button>
+    <button type="button" onclick="funcao4()">Função4</button>
     <br>
     <p id="style-text">
         Manipulando Via DOM
