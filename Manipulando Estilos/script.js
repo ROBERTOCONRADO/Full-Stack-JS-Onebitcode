@@ -17,11 +17,11 @@ function funcao3() {
 }
 function funcao4() {
     let element = document.getElementById("style-text");
-    element.classList.add("text-shadow-pop-tl")
+    element.classList.add("text-shadow")
 }
 function funcao5() {
     let element = document.getElementById("style-text");
-    element.classList.remove("text-shadow-pop-tl")
+    element.classList.remove("text-shadow")
 }
 function funcao6() {
     let element = document.getElementById("style-text");
