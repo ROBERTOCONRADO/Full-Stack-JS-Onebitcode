@@ -5,52 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Manipulando Estilos</title>
     <style>
-    
-        p.teste{
-            color: brown;
-            font-size: 25px;
-        }
-        p.teste:hover {
-            animation: teste 2s ease;
-        }
-        @-webkit-keyframes teste {
-        0% {
-            letter-spacing: 1em;
-            opacity: 0;
-        }
-        40% {
-            opacity: 0.6;
-        }
-        100% {
-            letter-spacing: normal;
-            opacity: 1;
-        }
-        }
-        @keyframes teste {
-        0% {
-            letter-spacing: 1em;
-            opacity: 0;
-        }
-        40% {
-            opacity: 0.6;
-        }
-        100% {
-            letter-spacing: normal;
-            opacity: 1;
-        }
-        }
+       
     </style>
 </head>
 <body>
-    <button type="button" onclick="funcao1()">Função1</button>
-    <button type="button" onclick="funcao2()">Função2</button>
-    <button type="button" onclick="funcao3()">Função3</button>
-    <button type="button" onclick="funcao4()">Função4</button>
-    <br>
     <p id="style-text">
         Manipulando Via DOM
     </p>
+    <button type="button" onclick="funcao1()">Função1</button>
+    <button type="button" onclick="funcao2()">Função2</button>
+    <button type="button" onclick="funcao3()">Função3</button>
+    <button type="button" onclick="funcao4()">Add Text Shadow</button>
+    <button type="button" onclick="funcao5()">Remove Text Shadow</button>
+    <button type="button" onclick="funcao6()">Atention</button>
+    <button type="button" onclick="funcao7()">Remove Atention</button>
 </body>
 </html>
